@@ -50,10 +50,11 @@ public class HungerManager : MonoBehaviour
     }
 
     private void GameOver()
-    {
-        isGameOver = true;
-        Debug.Log("Starved! Game Over.");
-        
-        TrackTile.moveSpeed = 0f; 
-    }
+{
+    isGameOver = true;
+    
+    TrackTile.moveSpeed = 0f; 
+
+    ScoreManager.Instance.SaveRunScore();
+}
 }
