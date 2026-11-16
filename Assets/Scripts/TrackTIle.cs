@@ -8,7 +8,7 @@ public class TrackTile : MonoBehaviour
     {
         transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
 
-        if (transform.position.z < -15f)
+        if (transform.position.z < -50f)
         {
             TrackSpawner.Instance.SpawnTile();
             Destroy(gameObject); 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; // Required for the Slider
 
 public class HungerManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class HungerManager : MonoBehaviour
 
     private float currentHunger;
     private bool isGameOver = false;
+    public GameObject gameOverScreen;
 
     void Awake()
     {
@@ -49,12 +51,23 @@ public class HungerManager : MonoBehaviour
         }
     }
 
-    private void GameOver()
-{
-    isGameOver = true;
-    
-    TrackTile.moveSpeed = 0f; 
+    private void GameOver()    
+    {
+        isGameOver = true;
+        gameOverScreen.SetActive(true);
+        
+        TrackTile.moveSpeed = 0f; 
 
-    ScoreManager.Instance.SaveRunScore();
-}
+        ScoreManager.Instance.SaveRunScore();
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
