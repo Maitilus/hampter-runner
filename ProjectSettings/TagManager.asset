@@ -7,7 +7,7 @@ TagManager:
   - Obstacle
   - Food
   - ShieldPowerup
-  - CorePowerup
+  - DoublePointsPowerup
   layers:
   - Default
   - TransparentFX

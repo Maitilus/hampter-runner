@@ -34,10 +34,13 @@ public class PlayerCollision : MonoBehaviour
         {
             if (powerups.TryConsumeShield())
             {
+                CameraShake.Instance?.Shake(0.12f, 0.08f);
                 Destroy(other.gameObject);
                 return;
             }
 
+            AudioManager.Instance?.PlayCrashSounds();
+            CameraShake.Instance?.Shake();
             HungerManager.Instance.ModifyHunger(-obstacleDamage);
             Destroy(other.gameObject);
         }
