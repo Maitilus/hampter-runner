@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8350188577186097186}
   - component: {fileID: 6054283812351991016}
   - component: {fileID: 1366508001944364140}
+  - component: {fileID: 5391261600833355754}
   m_Layer: 0
   m_Name: Wheel
   m_TagString: ShieldPowerup
@@ -114,3 +115,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &5391261600833355754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5694203031072865597}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 3.5, z: 5}
+  m_Center: {x: -0.0000000021313964, y: 0.04768616, z: 0}
