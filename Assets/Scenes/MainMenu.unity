@@ -2615,6 +2615,7 @@ GameObject:
   - component: {fileID: 1560047817}
   - component: {fileID: 1560047816}
   - component: {fileID: 1560047815}
+  - component: {fileID: 1560047819}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -2850,6 +2851,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1560047819
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560047814}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1627537646
 GameObject:
   m_ObjectHideFlags: 0
